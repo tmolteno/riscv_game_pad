@@ -1,0 +1,4 @@
+
+
+build:
+	cd ${LOC}; make all; cp ${LOC}.bin /output/${LOC}.bin

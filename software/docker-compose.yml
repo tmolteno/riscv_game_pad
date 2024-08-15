@@ -1,0 +1,10 @@
+
+services:
+  compiler:
+    build: .                                # Path to Dockerfile
+    environment:
+      - LOC                    		    # Name of the code to build
+    volumes:
+      - ./build_target:/output
+      # - ~/github/CH32V003-CameConsole/software:/source
+    command: make
